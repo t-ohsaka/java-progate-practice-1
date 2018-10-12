@@ -1,4 +1,4 @@
-class Main {
+class Practice06 {
     public static void main(String[] args) {
         // int型の変数numberを定義してください
         

@@ -27,7 +27,7 @@ BMIは13.888888888888889です
 */
 
 
-class Main {
+class Practice15 {
     public static void main(String[] args) {
         // 変数nameに、好きな名前を代入してください
         

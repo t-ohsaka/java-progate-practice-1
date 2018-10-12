@@ -1,4 +1,4 @@
-class Main {
+class Practice05 {
     public static void main(String[] args) {
         // "こんにちは"と"世界"を連結して出力してください
         

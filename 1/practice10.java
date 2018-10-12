@@ -1,4 +1,4 @@
-class Main {
+class Practice10 {
     public static void main(String[] args) {
         int number = 8;
         

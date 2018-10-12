@@ -1,4 +1,4 @@
-class Main {
+class Practice13 {
     public static void main(String[] args) {
         int month = 12;
         int date = 31;

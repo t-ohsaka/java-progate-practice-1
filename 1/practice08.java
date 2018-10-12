@@ -1,4 +1,4 @@
-class Main {
+class Practice08 {
     public static void main(String[] args) {
         int number = 11;
         String text = "Ruby";

@@ -1,4 +1,4 @@
-class Main {
+class Practice03 {
     public static void main(String[] args) {
         // 数値の17を出力してください
         

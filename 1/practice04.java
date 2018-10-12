@@ -1,4 +1,4 @@
-class Main {
+class Practice04 {
     public static void main(String[] args) {
         // 12を3で割った値を出力してください
         
