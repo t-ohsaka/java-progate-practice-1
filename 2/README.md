@@ -96,3 +96,71 @@ for (...) {
     処理
 }
 ```
+
+## 配列
+
+宣言と初期化
+
+```java
+型[] 変数名 = {要素1, 要素2, ...};
+```
+
+取得
+
+```java
+変数名[インデックス番号]
+```
+
+代入
+
+```java
+変数名[インデックス番号] = 値
+```
+
+```java
+// 宣言
+int[] numbers = {1, 2, 3};
+
+// 取得
+System.out.println(numbers[0]); // 1
+
+// 代入
+numbers[2] = 9;
+System.out.println(numbers[2]); // 9
+```
+
+> インデックス番号は`0`から
+
+### 配列の長さを取得
+
+`配列.length`で配列の要素数を取得できる
+
+```java
+int[] numbers = {1, 2, 3};
+System.out.println(numbers.length); // 3
+```
+
+## 拡張for文
+
+```java
+for (型 変数名: 配列名) {
+    繰り返す処理
+}
+```
+
+配列は拡張for文で書くほうがスマート
+
+```java
+int[] numbers = {1, 2, 3};
+for (int num: numbers) {
+    System.out.println(numbers[i]);
+}
+
+/* 出力結果
+
+1
+2
+3
+
+*/
+```
