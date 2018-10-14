@@ -5,3 +5,7 @@ class Main {
         Person.hello();
     }
 }
+
+/*
+ * 実行してみるだけ
+ */
