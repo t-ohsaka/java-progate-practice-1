@@ -6,7 +6,7 @@ class Practice06 {
         printMsg("山田", "はじめまして");
     }
 
-    static printMsg(String name) {
+    static void printMsg(String name) {
         System.out.println("こんにちは、" + name + "です");
     }
 }
