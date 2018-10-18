@@ -2,9 +2,9 @@
 ## コンソールへの出力
 
 ```java
-System.out.println("改行される")
-System.out.print("改行")
-System.out.print("されない")
+System.out.println("改行される");
+System.out.print("改行");
+System.out.print("されない");
 ```
 
 実行結果
@@ -31,8 +31,6 @@ System.out.print("されない")
 ```
 
 Eclipseの場合、`Ctrl+Shift+/`か`Ctrl+/`でコメントにできる
-
-
 
 ## 型
 
