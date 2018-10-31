@@ -78,14 +78,11 @@ class クラス名 {
 - クラス名の最初の文字は大文字
 - ファイル名は**クラス名.java**とする
 
-「実行」部分と「データとロジック」部分を分ける
-
 クラスのメソッドの呼び出し
 
 ```java
 クラス名.メソッド名();
 ```
-
 
 ### ライブラリ
 
@@ -97,9 +94,32 @@ import クラス名;
 
 `java.lang.*`のクラスは`import`しなくても使える
 
+例）コンソールからの入力を受け取る
+
+`Scanner`クラスを使う
+
+```java
+import java.util.Scanner
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("あなたの名前：");
+        String name = sc.next();
+
+        System.out.println(name + "さん、こんにちは！");
+    }
+}
+```
+
+整数を受け取るには、`Scanner.nextInt()`、小数を受け取るには`Scanner.nextDouble`を使う
+
 ## オブジェクト指向の学習
 
+クラスはデータと処理をまとめることが目的
 
+比喩とコンピュータの処理を一緒にしないこと
 
 ## 参考文献
 
