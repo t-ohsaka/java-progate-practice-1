@@ -1,3 +1,5 @@
+package lesson04.practice06;
+
 class Calculation {
     // sumメソッドを追加する
 

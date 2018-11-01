@@ -1,3 +1,5 @@
+package lesson04.practice04;
+
 class Person {
 
     private String name;

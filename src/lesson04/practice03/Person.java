@@ -1,3 +1,5 @@
+package lesson04.practice03;
+
 class Person {
 
     // name というインスタンス変数を定義する

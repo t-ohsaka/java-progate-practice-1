@@ -1,14 +1,16 @@
+package lesson04.practice03;
+
 class Main {
     public static void main(String[] args) {
         Person person1 = new Person();
         // setNameを使い、名前をセットする
 
         person1.hello();
-      
-      
+
+
         Person person2 = new Person();
         // setNameを使い、名前をセットする
-        
+
         person2.hello();
     }
 }

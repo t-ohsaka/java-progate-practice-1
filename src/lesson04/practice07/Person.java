@@ -1,3 +1,5 @@
+package lesson04.practice07;
+
 class Person {
     private String name;
     private String place;
@@ -8,7 +10,7 @@ class Person {
     }
 
     // コンストラクタをオーバーロードし、引数を2つ受け取るコンストラクタを定義する
-    
+
     public void printData() {
         System.out.println("私は" + name + "です。" + place + "に住んでいます")
     }

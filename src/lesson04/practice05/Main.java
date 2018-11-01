@@ -1,3 +1,5 @@
+package lesson04.practice05;
+
 class Main {
     public static void main(String[] args) {
         Person person1 = new Person();

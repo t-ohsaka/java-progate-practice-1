@@ -1,3 +1,5 @@
+package lesson04.practice02;
+
 class Person {
     // 「こんにちは」と出力するhelloメソッドを定義する
 

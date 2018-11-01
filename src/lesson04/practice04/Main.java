@@ -1,9 +1,11 @@
+package lesson04.practice04;
+
 class Main {
     public static void main(String[] args) {
         // コンストラクタに引数を渡す
         Person person1 = new Person();
         person1.hello();
-      
+
         // コンストラクタに引数を渡す
         Person person2 = new Person();
         person2.hello();

@@ -1,3 +1,5 @@
+package lesson04.practice08;
+
 class Person {
     private String name;
     private String place;
@@ -12,7 +14,7 @@ class Person {
         this.name = name;
         this.place = place;
     }
-    
+
     public void printData() {
         System.out.println("私は" + name + "です。" + place + "に住んでいます")
     }

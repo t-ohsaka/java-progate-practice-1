@@ -1,3 +1,5 @@
+package lesson04.practice05;
+
 class Person {
     // クラス変数を定義する
 
