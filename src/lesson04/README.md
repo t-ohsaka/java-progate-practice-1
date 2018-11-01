@@ -145,6 +145,67 @@ class Main {
 }
 ```
 
+### コンストラクタのオーバーロード
+
+引数の個数や種類を変えて、インスタンスを生成したい時があるため、いつくかコンストラクタを定義しておくことができる。
+
+```java
+// String型の引数が1つのみ
+FileReader fr1 = new FileReader("C:\sample\hoge.txt")
+
+// String型の引数が2つ
+FileReader fr1 = new FileReader("C:\sample\hoge.txt", "utf-8")
+```
+
+複数コンストラクタを定義する
+
+```java
+class FileReader {
+    public FileReader(String path) {
+        ...
+    }
+
+    public FileReader(String path, String encoding) {
+        ...
+    }
+}
+```
+
+コンストラクタをオーバーライドすることで、新しくクラスを作らなくてもよくなる（コンストラクタの引数が違うだけのクラスを何個も作らなくてもよくなる）
+
+### コンストラクタから別のコンストラクタを呼び出す
+
+コンストラクタ内から`this()`を使うことで、別のコンストラクタを呼び出すことができる。  
+また、コンストラクタの最初の行にしか記述できない
+
+```java
+class FileReader {
+    private String path;
+    private String encoding;
+
+    public FileReader(String path) {
+        // これの場合、encoding には utf-8 が渡される
+        this(path, "utf-8");
+    }
+
+    public FileReader(String path, String encoding) {
+        this.path = path;
+        this.encoding = encoding;
+    }
+}
+```
+
+```java
+// String型の引数が1つのみ
+FileReader fr1 = new FileReader("C:\sample\hoge.txt")
+
+// String型の引数が2つ
+FileReader fr1 = new FileReader("C:\sample\hoge.txt", "sjis")
+```
+
+参考サイト：[【Java】 コンストラクタって何？ this( )の意味 | 一番かんたんなJava入門](https://nobuo-create.net/java-beginner-20/)
+
+
 ## クラス変数、クラスメソッド
 
 クラスごとに１つずつしかない
@@ -173,3 +234,19 @@ class Main
 
 クラスメソッドから、インスタンス変数へのアクセスはできない。  
 →クラスメソッドはインスタンスを生成しなくても呼び出せるため、インスタンス変数がない可能性がある
+
+## 定義時の初期値
+
+|型|初期値|
+|---|---|
+|参照型|null|
+|byte|0|
+|short|0|
+|int|0|
+|long|0L|
+|float|0.0f|
+|double|0.0d|
+|char|'\u0000'|
+|boolean|false|
+
+参考サイト：[変数の初期値（Java言語仕様4.12.5） - Qiita](https://qiita.com/java-beginner/items/9fc60e3754445a57266e)
