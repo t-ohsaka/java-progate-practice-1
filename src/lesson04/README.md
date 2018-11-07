@@ -235,6 +235,39 @@ class Main
 クラスメソッドから、インスタンス変数へのアクセスはできない。  
 →クラスメソッドはインスタンスを生成しなくても呼び出せるため、インスタンス変数がない可能性がある
 
+## カプセル化
+
+アクセス範囲を制限して、隠せる
+
+- `public`: 外からアクセスできる
+- `private`: クラス内でのみアクセス可能
+
+### getterとsetter
+
+privateなフィールドに安全にアクセスするためのメソッド  
+※ ただのメソッド
+
+- getterはprivateなフィールドを返すメソッドの呼び方で、一般的に`getXXXX`というメソッド名にする
+- setterはprivateなフィールドに値をセットするメソッドの呼び方で、一般的に`setXXXX`というメソッド名にする
+
+```java
+class Person {
+    private String name;
+
+    // getter
+    public String getName() {
+        return this.name;
+    }
+
+    // setter
+    public void setName(String name) {
+        this.name = name;
+    }
+}
+```
+
+getterのみにすることで、読み取り専用なフィールドにすることができる！
+
 ## 定義時の初期値
 
 |型|初期値|
